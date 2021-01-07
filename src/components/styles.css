@@ -1,0 +1,63 @@
+.form {
+  margin: 15px 0px;
+}
+
+.form-group {
+  display: flex;
+}
+
+input.form-control,
+input.form-control:hover,
+input.form-control:focus {
+  box-shadow: none;
+  border-radius: 0px !important;
+}
+.btn,
+.btn-md .btn:focus,
+.btn:hover {
+  padding: 0.375rem 1.75rem !important;
+  box-shadow: none !important;
+  font-weight: 600 !important;
+  border-radius: 0px !important;
+}
+
+.mycard {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.mycard p {
+  font-size: 0.6rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.img-frame img {
+  width: 100%;
+}
