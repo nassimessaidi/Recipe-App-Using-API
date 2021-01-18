@@ -4,12 +4,12 @@ import "./components/styles.css";
 import Recipe from "./components/recipe";
 
 const App = () => {
-  const APP_ID = "babfb8be";
-  const APP_KEY = "c0ad6eefeb4d6abb001e92ee78930336";
+  const APP_ID = process.env.REACT_APP_RECIPE_APP_ID;
+  const APP_KEY = process.env.REACT_APP_RECIPE_APP_KEY;
 
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
-  const [query, setQuery] = useState("chicken");
+  const [query, setQuery] = useState("juice");
 
   useEffect(() => {
     getRecipes();
